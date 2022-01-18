@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	 int a,c,i,p=0;
+	 clrscr();
+	 printf("\n Enter value of a:");
+	 scanf("%d",&a);
+	 for(c=a;a>0;a=a/10)
+	 {
+		i=a%10;
+		p=i+p*10;
+	 }
+	 if(c==p)
+		printf("\n Number is palidrom");
+	 else
+		printf("\n Number is not palidrom");
+	 getch();
+}
+
